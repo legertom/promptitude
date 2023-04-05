@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="my-4">Job Details</h1>
+
+  <p>
+    <strong>Title:</strong>
+    <%= @job.title %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @job.description %>
+  </p>
+
+  <p>
+    <strong>Company:</strong>
+    <%= @job.company %>
+  </p>
+
+  <%= link_to 'Edit', edit_job_path(@job), class: "btn btn-secondary" %> |
+  <%= link_to 'Back', jobs_path, class: "btn btn-primary" %>
+</div>
